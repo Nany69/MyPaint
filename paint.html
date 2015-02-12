@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+	<title>We are Dev !</title>
+
+	<!-- Cascading style sheet -->
+	<link rel="stylesheet" type="text/css" href="css/Paint.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<!-- Jquery -->
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+</head>
+
+<body>
+
+    	<h1>My Paint Javascript</h1>
+
+	<canvas id="canvas" width="800" height="500"></canvas>
+
+	<div class="container">
+		<ul id="couleurs">
+			<li><a href="#" data-couleur="#000000" class="actif">Noir</a></li>
+			<li><a href="#" data-couleur="#ff0000">Rouge</a></li>
+			<li><a href="#" data-couleur="brown">Marron</a></li>
+			<li><a href="#" data-couleur="orange">Orange</a></li>
+			<li><a href="#" data-couleur="yellow">Jaune</a></li>
+			<li><a href="#" data-couleur="green">Vert</a></li>
+			<li><a href="#" data-couleur="cyan">Cyan</a></li>
+			<li><a href="#" data-couleur="blue">Bleu</a></li>
+			<li><a href="#" data-couleur="indigo">Indigo</a></li>
+			<li><a href="#" data-couleur="Violet">Violet</a></li>
+			<li><a href="#" data-couleur="pink">Rose</a></li>
+		</ul>
+		<form id="largeurs_pinceau">
+			<label for="largeur_pinceau">Largeur du pinceau :</label>
+			<input id="largeur_pinceau" type="range" min="1" max="50" value="1" />
+			<output id="output">1 pixels</output>
+			
+			<br/>
+			<input type="button" id="gomme" value="Gomme" data-couleur="#ffffff" class="btn btn-primary btn-info">
+			<input type="reset" id="reset" class="btn btn-primary btn-info" value="Réinitialiser" />
+			<input type="button" id="save" class="btn btn-primary btn-info" value="Sauvergarder mon image" />
+			<input type="button" id="ligne" class="btn btn-primary btn-info" value="Ligne" />
+			<input type="button" id="rect" class="btn btn-primary btn-info" value="Rectangle" />
+			<input type="button" id="cercle" class="btn btn-primary btn-info" value="Cercle" />
+		</form>
+	</div>
+
+	<!-- Javascript -->
+	<script type="text/javascript" src="js/Tools.js"></script>
+</body>
+</html>
